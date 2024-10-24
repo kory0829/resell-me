@@ -1,0 +1,616 @@
+/*  FONTS
+1. NAVBAR
+2. BANNER
+3. ABOUT
+4. GET STARTED
+5. FEATURES
+6. CAROUSEL
+7. TESTIMONIAL
+8. FAQ
+9. LOGOS
+10.SIGN UP
+11. FOOTER 
+12. MEDIA QUIRIES */
+@font-face {
+  font-family: bold;
+  src: url(./assets/fonts/AvenirBold.otf);
+}
+@font-face {
+  font-family: regular;
+  src: url(./assets/fonts/Avenir.otf);
+}
+@font-face {
+  font-family: cero;
+  src: url(./assets/fonts/CeraPro.otf);
+}
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/*1. Navbar */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link {
+  color: white;
+  transition: color 0.3s ease;
+  font-family: regular;
+}
+.nav-link:hover {
+  color: limegreen;
+}
+
+/*2. Banner Section */
+.banner {
+  background-image: url("./assets/img/img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #011e55;
+  width: 100%;
+  padding: 0 0 20% 0;
+  position: relative;
+  margin-bottom: 700px;
+}
+.banner .outerBanner {
+  margin-top: 5%;
+}
+.banner h1 {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 113px;
+  color: white;
+  padding: 0 15%;
+}
+.banner p {
+  font-family: regular;
+  color: white;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 35px;
+}
+.banner .btn {
+  background-color: white;
+  border-radius: 0;
+  border: none;
+  color: #011e55;
+  padding: 10px 40px;
+  margin-left: 10px;
+  font-family: cero;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 31px;
+}
+.banner .btn:nth-child(2) {
+  background-color: #018181;
+  color: white;
+}
+.banner .SecImg {
+  position: absolute;
+  padding-top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94%;
+}
+.banner .SecImg img {
+  display: block;
+  width: 100%;
+}
+
+/*3. About Section */
+.about {
+  padding: 50px 50px;
+}
+.about .innerAbout {
+  align-items: center;
+}
+.about .aboutItems {
+  color: #013d7b;
+}
+.about .aboutItems:nth-child(1) button {
+  display: none;
+}
+.about h2 {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+}
+.about p {
+  font-family: regular;
+  color: #013d7b;
+  font-weight: 400;
+  font-size: 20px;
+}
+.about p span {
+  font-family: bold;
+}
+.about .btn {
+  background-color: #013d7b;
+  border-radius: 0;
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  font-family: cero;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+.getStarted {
+  padding: 50px 50px;
+}
+.getStarted h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  padding-top: 30px;
+  margin-bottom: 5rem;
+}
+.getStarted .outerGetStart {
+  padding: 1rem;
+}
+.getStarted .outerGetStart .innerGetStart {
+  justify-content: center;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems .card {
+  background-color: rgb(1, 30, 85);
+  width: 100%;
+  height: 60vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  position: relative;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems .card .card-number {
+  position: absolute;
+  top: -18px;
+  left: -15px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(0, 63, 116);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 10;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems .card .card-img-top {
+  padding-top: 40px;
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems .card .card-body {
+  text-align: center;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems .card .card-body .card-title {
+  padding-top: 30px;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems .card .card-body .card-text {
+  color: white;
+  padding-top: 10px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.getStarted .outerGetStart .innerGetStart .GetStartedItems .card .card-body .card-text.pt-3 {
+  padding-top: 1rem;
+}
+.getStarted .getbtn {
+  background-color: rgb(1, 61, 123);
+  width: 300px;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.getStarted .getbtn:hover {
+  background-color: #003d80;
+}
+
+.ourFeatures {
+  padding: 120px 50px;
+}
+.ourFeatures .outerFeatures .innerFeatures .featuresItems h2 {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+  color: #003f74;
+}
+.ourFeatures .outerFeatures .innerFeatures .featuresItems p {
+  font-family: regular;
+  color: #003f74;
+  font-weight: 400;
+  font-size: 20px;
+}
+.ourFeatures .outerFeatures .innerFeatures .featuresItems .card-title {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 44px;
+  color: #003f74;
+}
+.ourFeatures .outerFeatures .innerFeatures .featuresItems .card-text {
+  font-family: regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #003f74;
+}
+.ourFeatures .outerFeatures .innerFeatures .featuresItems .circle img {
+  width: 20%;
+}
+
+.reCases {
+  background-color: rgb(248, 248, 248);
+}
+.reCases .outerReCases h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(0, 63, 116);
+}
+.reCases .outerReCases .innerReCases {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.reCases .outerReCases .innerReCases .reCasesItems {
+  flex: 0 0 auto;
+  padding: 20px;
+}
+.reCases .outerReCases .innerReCases .reCasesItems .card {
+  background-color: rgb(248, 248, 248);
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: rgb(0, 63, 116);
+  padding: 20px;
+  height: 80%;
+}
+.reCases .outerReCases .innerReCases .reCasesItems .card .devimg {
+  width: 10vh;
+  height: 10vh;
+  margin: 0 auto; /* Center image horizontally */
+}
+.reCases .outerReCases .innerReCases .reCasesItems .card .card-body {
+  text-align: center; /* Align text content to center */
+}
+.reCases .outerReCases .innerReCases .reCasesItems .btn {
+  text-align: center;
+  background-color: #013d7b;
+  border-radius: 0;
+  color: white;
+  padding: 10px 0; /* Adjust padding for proper sizing */
+  font-family: cero;
+  margin: 10px 50px; /* Center button horizontally */
+  height: 8vh;
+  width: 100%; /* Ensure button width spans the card */
+  max-width: 30vh; /* Limit the maximum width */
+}
+
+.testmonial {
+  height: 100vh;
+  text-align: center;
+  margin-top: 20vh;
+  background-color: rgb(1, 30, 85);
+}
+.testmonial .bbt {
+  margin-left: -10px;
+}
+.testmonial .tabs {
+  width: 7vh;
+}
+.testmonial .htwo {
+  margin-top: 200px;
+  margin-left: -100px;
+}
+.testmonial .po {
+  text-align: left;
+  padding-left: 30px;
+}
+.testmonial .testimonialItem {
+  color: white;
+}
+.testmonial .testimonialItem .slider-container {
+  padding-top: 60px;
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  gap: 15px; /* Adds space between card containers */
+  width: 135vh;
+  height: 90%;
+}
+.testmonial .testimonialItem .card-container {
+  flex: 0 0 auto;
+  margin-right: 15px; /* Controls space between individual cards */
+}
+.testmonial .testimonialItem .card {
+  background: #003f74;
+  padding: 40px 15px;
+  height: 100%;
+  width: 60vh;
+  box-sizing: border-box;
+}
+.testmonial .testimonialItem .card .commas {
+  background: rgb(1, 30, 85);
+  padding: 6px 6px;
+  width: 5vh;
+  height: 8vh;
+  bottom: 156px;
+}
+.testmonial .testimonialItem .card .card-body {
+  text-align: start;
+  color: white;
+}
+.testmonial .testimonialItem .card .card-body h6 {
+  opacity: 0.5;
+  font-family: cero;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 20px;
+}
+.testmonial .testimonialItem .card .card-body .card-text {
+  font-family: regular;
+  font-weight: 350;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.faq {
+  padding: 0px 20px;
+  margin-top: 20vh;
+}
+.faq .faqItem {
+  color: #013d7b;
+}
+.faq .faqItem h2 {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+}
+.faq .faqItem p {
+  font-family: regular;
+  color: #013d7b;
+  font-weight: 400;
+  font-size: 20px;
+}
+.faq .faqItem .accordion .accordion-item {
+  border-bottom: 8px solid white;
+  border-radius: 5px;
+  border-left: none;
+  border-right: none;
+}
+.faq .faqItem .accordion .accordion-item .accordion-button {
+  background-color: #013d7b;
+  color: #ffffff;
+  padding: 0 15px;
+  font-family: regular;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.faq .faqItem .accordion .accordion-item .accordion-button::after {
+  background-image: url("./assets/img/Vector (4).png");
+}
+.faq .faqItem .accordion .accordion-item .accordion-body {
+  font-family: regular;
+  color: #013d7b;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.features h2 {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+  color: #013d7b;
+  padding: 5% 0;
+}
+
+.logos {
+  padding: 20px 10px;
+}
+.logos .outerLogos .card {
+  height: 200px;
+  padding: 0 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 9px;
+  border: none;
+}
+.logos button {
+  background-color: #003f74;
+  padding: 20px;
+  border: none;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.logos button img {
+  width: 100%;
+  height: auto;
+}
+.logos .logoImgs {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  padding: 3% 0;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.signUp {
+  background-image: url("./assets/img/img1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #011e55;
+  margin: 12% 0;
+  width: 100%;
+}
+.signUp .innerSignUp {
+  color: #ffffff;
+  padding: 10% 0;
+}
+.signUp .innerSignUp h2 {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 76px;
+}
+.signUp .innerSignUp p {
+  font-family: regular;
+  font-weight: 400;
+  font-size: 20px;
+}
+.signUp .innerSignUp .btn {
+  background-color: white;
+  border-radius: 0;
+  border: none;
+  color: #011e55;
+  padding: 10px 40px;
+  margin-left: 10px;
+  font-family: cero;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 31px;
+}
+
+footer {
+  background: #303846;
+  padding: 5% 0 0 0;
+  margin-top: 10%;
+  bottom: 0;
+  width: 100%;
+}
+footer .outerFooter {
+  padding: 0 0 0 13%;
+}
+footer .outerFooter .footerItem h3 {
+  font-family: cero;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 50px;
+  color: #ffffff;
+}
+footer .outerFooter .footerItem .link {
+  color: white;
+  font-family: regular;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+}
+footer p {
+  color: white;
+  font-family: regular;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 2% 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 414px) {
+  .testmonial {
+    height: auto;
+    margin-top: 10vh;
+  }
+  .testmonial .htwo {
+    font-size: 32px;
+    margin-left: 0;
+    padding-top: 150px;
+  }
+  .testmonial .po {
+    font-size: 14px;
+    padding-left: 15px;
+    margin-top: 10px;
+  }
+  .testmonial .bbt {
+    margin-left: 0;
+  }
+  .testmonial .tabs {
+    width: 5vh;
+  }
+  .testmonial .testimonialItem .slider-container {
+    width: 100%;
+    padding-top: 30px;
+    height: auto;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .testmonial .testimonialItem .card-container {
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+  .testmonial .testimonialItem .card {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .testmonial .testimonialItem .card .card-body h6 {
+    font-size: 16px;
+  }
+  .testmonial .testimonialItem .card .card-body .card-text {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .testmonial {
+    height: auto;
+    margin-top: 15vh;
+  }
+  .testmonial .htwo {
+    font-size: 36px;
+    margin-left: 0;
+    padding-top: 180px;
+  }
+  .testmonial .po {
+    font-size: 16px;
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  .testmonial .bbt {
+    margin-left: 0;
+  }
+  .testmonial .tabs {
+    width: 6vh;
+  }
+  .testmonial .testimonialItem .slider-container {
+    width: 100%;
+    padding-top: 40px;
+    height: auto;
+    gap: 15px;
+    flex-direction: column;
+  }
+  .testmonial .testimonialItem .card-container {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+  .testmonial .testimonialItem .card {
+    width: 100%;
+    padding: 35px 15px;
+  }
+  .testmonial .testimonialItem .card .card-body h6 {
+    font-size: 18px;
+  }
+  .testmonial .testimonialItem .card .card-body .card-text {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=App.css.map */
